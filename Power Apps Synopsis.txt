@@ -1,0 +1,216 @@
+
+
+
+
+Power Apps sessions
+
+There are two sessions planned for Power Apps
+a) Today
+b) Next week 9 am IST
+
+Agenda for Today
+
+1. What is Power Platform? 
+2.What is Power Apps?
+2.Need of Power Apps?
+3. What kind of Services supported in Power Apps.
+4. Embedding Power BI Report in Power Apps Tile
+5. Sending an Email using Power Apps and Gmail from Microsoft Flow
+6. Creating a form to enter data to the report. Accessing through mobile app.
+
+===========================================================
+Power Platform [It is the combination of the below 4 components]
+============================================================
+a) Power BI [Report / Dashboard Generation]
+b) Power Apps [ quickly build and share low-code apps with Microsoft Power Apps.]
+c) Power Automate [ Flow of tasks execution On-Demand, Scheduled, or Automate]
+d) Power Virtual Agent [easily build intelligent chatbots, No coding required]
+
+What is Power Automate?
+Which will automate the operations. They run On-demand/ Scheduled /Automated.
+
+What is Microsoft Flow?
+Performing set of operations as a flow.
+We can run the flow by manually triggering or scheduled way or automating
+
+What is the difference between On-Demand, Schedule, and Automate?
+
+On-Demand: User runs in their interested time / on the fly run / no specific time or event run
+Schedule: Specific time run [daily refresh at 9 am]
+Automate: Specific event run [ refresh when customer send an email] 
+
+
+How do we access Microsoft Flow?
+flow.microsoft.com
+
+What is required to work with Microsoft flow?
+Microsoft account is required
+
+Real time examples:
+
+a) Send en email, load data, after successful load send again an email, load data to cube database, send an email
+b) You want to receive a mobile message as soon as you got an Important Indication email from my manager
+c) SSIS Job--> DWH Job--> Dataset Refresh--> Report Generation [ MSBI and Power BI Combination]
+
+Examples:
+
+a) Send an email [gamil] before refresh of dataset, refresh dataset, send an email after refresh of dataset [will be discussed in the classroom]
+ 
+Email--> Dataset Refresh--> Email
+
+
+
+How many ways we refresh Dataset data?
+
+1st way:
+
+PBI Desktop level--> Manual refresh [refresh preview / refresh all]
+
+2nd way:
+
+PBI Service level--> On-Demand, Scheduled, Incremental
+
+3rd way:
+Microsoft Flow level--> On-Demand, Scheduled, and Automated
+
+
+Example 2:
+
+Refresh dataset data using Power BI Developer, REST API and Microsoft Flow
+[Share you the video, use it]
+
+=============================================================
+
+Power Apps:
+
+A low code approach to create mobile or tab apps and web based solutions.
+Real-Time Scenario:
+Delivery manager need a form in the app where he wants to see three buttons. 
+
+When he clicks first button, respective report should sent to customer team.
+When he clicks second button, respecive report should sent to sales managers.
+When he clicks third button, respecive report should sent to subordinates.
+
+Solution:
+1st way:
+
+We need .net / java / phython / html / php etc. languages code [ huge code approach].
+We will create a form and implement button actions [more code required]
+
+2nd way: [Simple Way]
+
+Without this code we can create simple forms with actions using Power Apps [Low-Code approach].
+
+
+
+Design Reason:
+
+Now everyone can quickly build and share low-code apps with Microsoft Power Apps.
+
+Ex: 
+	Your customer wants to enter data and PBI report should show the same data?
+
+	Solution:
+
+	Create a mobile app [with simple form with set of text boxes and buttons], after entering details, when user clicks 	Submit, the data will be loaded to the database and report displayed with that data.
+	
+	Your customer need a form to enter data and below the form actual report.
+
+	Solution:
+
+	Create an app with two sections  
+
+	a) Form section
+
+	b) Report Display section [ Embed your Power BI Report]
+
+	    ***Power Apps Power BI Embedding,
+	    
+Excercise today:
+===============================================================
+Example 1:
+
+Sending an email to gmail using "Power Apps to Gmail "  in Power Automate [Microsoft Flow].
+===============================================================
+
+Example 2:
+
+Click Power Apps button to send an email using "Gmail".  [Microsoft Flow]
+
+===============================================================
+
+Example 3:
+
+Create an APP which shows Power BI report [ embedding report]
+
+Embedding Power BI Report in PowerApps Canvas [in a tile]
+
+https://app.powerbi.com/reportEmbed?reportId=aeec1f28-c1e3-46d6-8254-de66884f6c41&autoAuth=true&ctid=e2aa1f92-8ae9-48c0-8aa8-894fb201ce24&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWluZGlhLXdlc3QtcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D
+
+Practice:
+
+Power APPS App to show PBI Report
+
+1. Make.powerapps.com, connect using MS Credentials
+2. Create a blank form / select from gallery [ apperance suitable for mobile / tab]
+3. Use the menu options / left pane options / right pane options to generate a form
+
+The report which you want to embed, take the embed code of the report
+[Power BI Service-->workspace-->report--> File menu-->embed-->Website / portal-->copy the first URL]
+
+4. Save the App with proper name and description
+
+
+After Power APPs APP Creation
+
+1. Install Power APPs mobile app from play store
+2. Connect using your credentials 
+3. You will be able to see all the apps shared with you
+4. You can now work on it
+
+
+========================================================================================
+Example 4:
+
+Entering Details in a form and verifying the changes at source 
+
+Practice:
+a) Add one file at OneDrive [ if you use it, no Gateway connection required, if On-Premises sources used {SQL Server, C / D Drives} then Gateway connection is required.
+
+b) Create an app form from one drive file
+
+c) Do the changes fo formation (colors, fonts, titles, etc...) and styles, and Save it.
+
+	a) Browser View
+		See the options and change
+	b) Detail view
+		See the options and change
+	c) Data View
+		See the options and change
+
+d) Go to preview, add rows, so that those rows will be visible at actual source at OneDrive.
+
+e) Connect to Power APPs in the mobile, add rows / modify rows, those changes you will find in OneDrive file.
+
+=======================================================================================
+
+
+Example 5:
+Create a Power BI Report from a data source, providing user an interface to enter / modify data, so that it will reflect in the source and
+report level.
+
+
+Power APP[ change data]---> OneDrive [Excel]---> Power BI Report in the Power BI Service refresh
+
+
+b) Create a Power BI Report from the OneDrive Excel. This report will be refreshed when Power APPs level data changing.
+a) Follow the above approach to take changes
+
+
+Note:  You can Install a Gatewateway [Data Gateway], connect to On-Premise source and bring chanages to Power BI report from Mobile APP changes.
+
+
+
+=======================================================================================
+
+
