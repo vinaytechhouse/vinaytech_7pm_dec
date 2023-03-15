@@ -1,14 +1,11 @@
+Power Apps sessions Basics:
 
+There are two sessions planned for Power Apps:
 
-
-
-Power Apps sessions
-
-There are two sessions planned for Power Apps
 a) Today
 b) Next week 9 am IST
 
-Agenda for Today
+Agenda for Today:
 
 1. What is Power Platform? 
 2.What is Power Apps?
@@ -17,6 +14,7 @@ Agenda for Today
 4. Embedding Power BI Report in Power Apps Tile
 5. Sending an Email using Power Apps and Gmail from Microsoft Flow
 6. Creating a form to enter data to the report. Accessing through mobile app.
+
 
 ===========================================================
 Power Platform [It is the combination of the below 4 components]
